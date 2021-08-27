@@ -1,2 +1,2 @@
 # Brainstorlley2
-This is still a shit game for educational purposes
+This is still a shitty game for educational purposes
