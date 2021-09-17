@@ -3,6 +3,157 @@
   <component name="ChangeListManager">
     <list default="true" id="a5e22c49-80c6-4857-ac4d-ca877d0a6756" name="Changes" comment="Base project files">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TheGame2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TheGame2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Barrel.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Barrel.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Barrel.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Barrel.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/BarrierParking.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/BarrierParking.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/BarrierParking.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/BarrierParking.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Bathroom.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Bathroom.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Bathroom.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Bathroom.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/ConcreteBlock.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/ConcreteBlock.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/ConcreteBlock.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/ConcreteBlock.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Container_01.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Container_01.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Container_02.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Container_02.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Container_02.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Container_02.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Container_03.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Container_03.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Container_03.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Container_03.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Explosive_Barrel.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Explosive_Barrel.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Explosive_Barrel.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Explosive_Barrel.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/GasTank.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/GasTank.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/GasTank.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/GasTank.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/GateKeeperStation.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/GateKeeperStation.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/GateKeeperStation.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/GateKeeperStation.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/HelicopterBase.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/HelicopterBase.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/HelicopterBase.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/HelicopterBase.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/LightPole.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/LightPole.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/LightPole.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/LightPole.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/MedicTent.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/MedicTent.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/MedicTent.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/MedicTent.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Quarter.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Quarter.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Quarter.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Quarter.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/RadioStation.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/RadioStation.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/RadioStation.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/RadioStation.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Refectory.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Refectory.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Refectory.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Refectory.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Render.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Render.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Render.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Render.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/SandsSack.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/SandsSack.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/SandsSack.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/SandsSack.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/SniperTower.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/SniperTower.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/SniperTower.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/SniperTower.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Storage.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Storage.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Storage.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Storage.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/TargetPratice.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/TargetPratice.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/TargetPratice.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/TargetPratice.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Wall_01.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Wall_01.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Wall_02.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Wall_02.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Wall_02.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/Wall_02.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/WoodenBox.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/WoodenBox.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/WoodenBox.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/BLEND/WoodenBox.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Barrel.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Barrel.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/BarrierParking.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/BarrierParking.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Bathroom.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Bathroom.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/ConcreteBlock.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/ConcreteBlock.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Container_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Container_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Container_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Container_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Container_03.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Container_03.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Explosive_Barrel.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Explosive_Barrel.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/GasTank.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/GasTank.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/GateKeeperStation.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/GateKeeperStation.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/HelicopterBase.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/HelicopterBase.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/LightPole.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/LightPole.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/MedicTent.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/MedicTent.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Quarter.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Quarter.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/RadioStation.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/RadioStation.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Refectory.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Refectory.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/SandsSack.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/SandsSack.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/SniperTower.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/SniperTower.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Storage.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Storage.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/TargetPratice.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/TargetPratice.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Wall_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Wall_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Wall_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/Wall_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/WoodenBox.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/FBX/WoodenBox.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/License.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MilitaryBase/MilitaryBase/OBJ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/VersionControlSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VersionControlSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +174,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@1.5.7/Editor/Collaborate/UserInterface/CollaborateWindow.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Projects/Unity Projects/GitHub/Brainstorlley2/TheGame2/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ImportedAssets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ImportedAssets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/FPSController/FpsControllerLPFP.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1xK73Vf0StDtj5w7rTxNO6LFamo" />
@@ -72,6 +223,7 @@
       <option name="presentableId" value="Default" />
       <updated>1630091746912</updated>
       <workItem from="1630091759206" duration="3583000" />
+      <workItem from="1631900297649" duration="4185000" />
     </task>
     <task id="LOCAL-00001" summary="Base project files">
       <created>1630092261954</created>
@@ -99,6 +251,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
