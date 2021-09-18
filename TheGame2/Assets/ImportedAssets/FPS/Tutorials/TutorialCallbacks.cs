@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using Unity.InteractiveTutorials;
+﻿/*
+using UnityEngine;
 using UnityEditor;
 using UnityEngine.AI;
 
@@ -67,3 +67,4 @@ namespace Unity.Tutorials
         }
     }
 }
+*/
