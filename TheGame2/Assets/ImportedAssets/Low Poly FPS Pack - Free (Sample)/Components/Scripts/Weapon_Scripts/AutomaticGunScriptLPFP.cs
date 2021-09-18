@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
 // ----- Low Poly FPS Pack Free Version -----
@@ -7,36 +7,6 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 
 	//Animator component attached to weapon
 	Animator anim;
-
-	[Header("Gun Camera")]
-	//Main gun camera
-	public Camera gunCamera;
-
-	[Header("Gun Camera Options")]
-	//How fast the camera field of view changes when aiming 
-	[Tooltip("How fast the camera field of view changes when aiming.")]
-	public float fovSpeed = 15.0f;
-	//Default camera field of view
-	[Tooltip("Default value for camera field of view (40 is recommended).")]
-	public float defaultFov = 40.0f;
-
-	public float aimFov = 25.0f;
-
-	[Header("UI Weapon Name")]
-	[Tooltip("Name of the current weapon, shown in the game UI.")]
-	public string weaponName;
-	private string storedWeaponName;
-
-	[Header("Weapon Sway")]
-	//Enables weapon sway
-	[Tooltip("Toggle weapon sway.")]
-	public bool weaponSway;
-
-	public float swayAmount = 0.02f;
-	public float maxSwayAmount = 0.06f;
-	public float swaySmoothValue = 4.0f;
-
-	private Vector3 initialSwayPosition;
 
 	//Used for fire rate
 	private float lastFired;
@@ -85,6 +55,7 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 
 	[Header("Grenade Settings")]
 	public float grenadeSpawnDelay = 0.35f;
+	public int granadeCount = 0;
 
 	[Header("Muzzleflash Settings")]
 	public bool randomMuzzleflash = false;
@@ -112,12 +83,6 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 	public AudioSource mainAudioSource;
 	//Audio source used for shoot sound
 	public AudioSource shootAudioSource;
-
-	[Header("UI Components")]
-	public Text timescaleText;
-	public Text currentWeaponText;
-	public Text currentAmmoText;
-	public Text totalAmmoText;
 
 	[System.Serializable]
 	public class prefabs
@@ -169,43 +134,12 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 	}
 
 	private void Start () {
-		
-		//Save the weapon name
-		storedWeaponName = weaponName;
-		//Get weapon name from string to text
-		currentWeaponText.text = weaponName;
-		//Set total ammo text from total ammo int
-		totalAmmoText.text = ammo.ToString();
-
-		//Weapon sway
-		initialSwayPosition = transform.localPosition;
 
 		//Set the shoot sound to audio source
 		shootAudioSource.clip = SoundClips.shootSound;
 	}
 
-	private void LateUpdate () {
-		
-		//Weapon sway
-		if (weaponSway == true) 
-		{
-			float movementX = -Input.GetAxis ("Mouse X") * swayAmount;
-			float movementY = -Input.GetAxis ("Mouse Y") * swayAmount;
-			//Clamp movement to min and max values
-			movementX = Mathf.Clamp 
-				(movementX, -maxSwayAmount, maxSwayAmount);
-			movementY = Mathf.Clamp 
-				(movementY, -maxSwayAmount, maxSwayAmount);
-			//Lerp local pos
-			Vector3 finalSwayPosition = new Vector3 
-				(movementX, movementY, 0);
-			transform.localPosition = Vector3.Lerp 
-				(transform.localPosition, finalSwayPosition + 
-					initialSwayPosition, Time.deltaTime * swaySmoothValue);
-		}
-	}
-	
-	private void Update () {
+	private void FixedUpdate () {
 
 		//Aiming
 		//Toggle camera FOV when right click is held down
@@ -215,10 +149,6 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 			isAiming = true;
 			//Start aiming
 			anim.SetBool ("Aim", true);
-
-			//When right click is released
-			gunCamera.fieldOfView = Mathf.Lerp(gunCamera.fieldOfView,
-				aimFov,fovSpeed * Time.deltaTime);
 
 			if (!soundHasPlayed) 
 			{
@@ -230,10 +160,6 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 		} 
 		else 
 		{
-			//When right click is released
-			gunCamera.fieldOfView = Mathf.Lerp(gunCamera.fieldOfView,
-				defaultFov,fovSpeed * Time.deltaTime);
-
 			isAiming = false;
 			//Stop aiming
 			anim.SetBool ("Aim", false);
@@ -247,42 +173,6 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 		{
 			randomMuzzleflashValue = Random.Range (minRandomValue, maxRandomValue);
 		}
-
-		//Timescale settings
-		//Change timescale to normal when 1 key is pressed
-		if (Input.GetKeyDown (KeyCode.Alpha1)) 
-		{
-			Time.timeScale = 1.0f;
-			timescaleText.text = "1.0";
-		}
-		//Change timesccale to 50% when 2 key is pressed
-		if (Input.GetKeyDown (KeyCode.Alpha2)) 
-		{
-			Time.timeScale = 0.5f;
-			timescaleText.text = "0.5";
-		}
-		//Change timescale to 25% when 3 key is pressed
-		if (Input.GetKeyDown (KeyCode.Alpha3)) 
-		{
-			Time.timeScale = 0.25f;
-			timescaleText.text = "0.25";
-		}
-		//Change timescale to 10% when 4 key is pressed
-		if (Input.GetKeyDown (KeyCode.Alpha4)) 
-		{
-			Time.timeScale = 0.1f;
-			timescaleText.text = "0.1";
-		}
-		//Pause game when 5 key is pressed
-		if (Input.GetKeyDown (KeyCode.Alpha5)) 
-		{
-			Time.timeScale = 0.0f;
-			timescaleText.text = "0.0";
-		}
-
-		//Set current ammo text from ammo int
-		currentAmmoText.text = currentAmmo.ToString ();
-
 		//Continosuly check which animation 
 		//is currently playing
 		AnimationCheck ();
@@ -299,19 +189,17 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 		}
 			
 		//Throw grenade when pressing G key
-		if (Input.GetKeyDown (KeyCode.G) && !isInspecting) 
+		if (Input.GetKeyDown (KeyCode.G) && !isInspecting && granadeCount > 0) 
 		{
 			StartCoroutine (GrenadeSpawnDelay ());
 			//Play grenade throw animation
 			anim.Play("GrenadeThrow", 0, 0.0f);
+			granadeCount -= 1;
 		}
 
 		//If out of ammo
 		if (currentAmmo == 0) 
 		{
-			//Show out of ammo text
-			currentWeaponText.text = "OUT OF AMMO";
-			//Toggle bool
 			outOfAmmo = true;
 			//Auto reload if true
 			if (autoReload == true && !isReloading) 
@@ -321,8 +209,6 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 		} 
 		else 
 		{
-			//When ammo is full, show weapon name again
-			currentWeaponText.text = storedWeaponName.ToString ();
 			//Toggle bool
 			outOfAmmo = false;
 			//anim.SetBool ("Out Of Ammo", false);
@@ -330,95 +216,7 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 			
 		//AUtomatic fire
 		//Left click hold 
-		if (Input.GetMouseButton (0) && !outOfAmmo && !isReloading && !isInspecting && !isRunning) 
-		{
-			//Shoot automatic
-			if (Time.time - lastFired > 1 / fireRate) 
-			{
-				lastFired = Time.time;
-
-				//Remove 1 bullet from ammo
-				currentAmmo -= 1;
-
-				shootAudioSource.clip = SoundClips.shootSound;
-				shootAudioSource.Play ();
-
-				if (!isAiming) //if not aiming
-				{
-					anim.Play ("Fire", 0, 0f);
-					//If random muzzle is false
-					if (!randomMuzzleflash && 
-						enableMuzzleflash == true) 
-					{
-						muzzleParticles.Emit (1);
-						//Light flash start
-						StartCoroutine(MuzzleFlashLight());
-					} 
-					else if (randomMuzzleflash == true)
-					{
-						//Only emit if random value is 1
-						if (randomMuzzleflashValue == 1) 
-						{
-							if (enableSparks == true) 
-							{
-								//Emit random amount of spark particles
-								sparkParticles.Emit (Random.Range (minSparkEmission, maxSparkEmission));
-							}
-							if (enableMuzzleflash == true) 
-							{
-								muzzleParticles.Emit (1);
-								//Light flash start
-								StartCoroutine (MuzzleFlashLight ());
-							}
-						}
-					}
-				} 
-				else //if aiming
-				{
-					
-					anim.Play ("Aim Fire", 0, 0f);
-
-					//If random muzzle is false
-					if (!randomMuzzleflash) {
-						muzzleParticles.Emit (1);
-					//If random muzzle is true
-					} 
-					else if (randomMuzzleflash == true) 
-					{
-						//Only emit if random value is 1
-						if (randomMuzzleflashValue == 1) 
-						{
-							if (enableSparks == true) 
-							{
-								//Emit random amount of spark particles
-								sparkParticles.Emit (Random.Range (minSparkEmission, maxSparkEmission));
-							}
-							if (enableMuzzleflash == true) 
-							{
-								muzzleParticles.Emit (1);
-								//Light flash start
-								StartCoroutine (MuzzleFlashLight ());
-							}
-						}
-					}
-				}
-
-				//Spawn bullet from bullet spawnpoint
-				var bullet = (Transform)Instantiate (
-					Prefabs.bulletPrefab,
-					Spawnpoints.bulletSpawnPoint.transform.position,
-					Spawnpoints.bulletSpawnPoint.transform.rotation);
-
-				//Add velocity to the bullet
-				bullet.GetComponent<Rigidbody>().velocity = 
-					bullet.transform.forward * bulletForce;
-				
-				//Spawn casing prefab at spawnpoint
-				Instantiate (Prefabs.casingPrefab, 
-					Spawnpoints.casingSpawnPoint.transform.position, 
-					Spawnpoints.casingSpawnPoint.transform.rotation);
-			}
-		}
+		
 
 		//Inspect weapon when T key is pressed
 		if (Input.GetKeyDown (KeyCode.T)) 
@@ -452,6 +250,7 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 		} 
 		else 
 		{
+			anim.SetBool ("Holster", false);
 			anim.SetBool ("Holster", false);
 		}
 
@@ -602,6 +401,11 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 			isReloading = false;
 		}
 
+		//Check if throwing granade
+		if (anim.GetCurrentAnimatorStateInfo(0).IsName("Granade Throw"))
+		{
+			isInspecting = true;
+		}
 		//Check if inspecting weapon
 		if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Inspect")) 
 		{
