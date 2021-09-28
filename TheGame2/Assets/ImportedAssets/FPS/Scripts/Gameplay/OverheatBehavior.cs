@@ -304,14 +304,7 @@ namespace Unity.FPS.Gameplay
 
         void FixedUpdate()
         {
-
-			if (Input.GetKeyDown(KeyCode.R) && !isReloading && !isInspecting)
-			{
-				//Reload
-				Reload();
-			}
-
-			if (Input.GetMouseButton(0) && !outOfAmmo && !isReloading && !isInspecting && !isRunning)
+			/*if (Input.GetMouseButton(0) && !outOfAmmo && !isReloading && !isInspecting && !isRunning)
 			{
 				//Shoot automatic
 				if (Time.time - lastFired > 1 / fireRate)
@@ -401,7 +394,7 @@ namespace Unity.FPS.Gameplay
 						casingSpawnPoint.transform.position,
 						casingSpawnPoint.transform.rotation);
 				}
-			}
+			}*/
 			AnimationCheck();
 			// visual smoke shooting out of the gun
 			float currentAmmoRatio = m_Weapon.CurrentAmmoRatio;

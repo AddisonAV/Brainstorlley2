@@ -5252,7 +5252,7 @@ GameObject:
   - component: {fileID: 8090847488450120274}
   m_Layer: 0
   m_Name: Weapon_Blaster
-  m_TagString: Untagged
+  m_TagString: Ak
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5320,13 +5320,13 @@ MonoBehaviour:
   ShootType: 1
   ProjectilePrefab: {fileID: 8924682559891268397, guid: 3c6b27d949cdda749892906e1f1d1b27,
     type: 3}
-  DelayBetweenShots: 0.1
+  DelayBetweenShots: 0.12
   BulletSpreadAngle: 0
   BulletsPerShot: 1
-  RecoilForce: 1
+  RecoilForce: 2
   AimZoomRatio: 0.5
   AimOffset: {x: 0, y: 0.075, z: 0}
-  AutomaticReload: 1
+  AutomaticReload: 0
   HasPhysicalBullets: 0
   ClipSize: 30
   ShellCasing: {fileID: 0}
@@ -5334,8 +5334,8 @@ MonoBehaviour:
   ShellCasingEjectionForce: 2
   ShellPoolSize: 1
   AmmoReloadRate: 16
-  AmmoReloadDelay: 1
-  MaxAmmo: 16
+  AmmoReloadDelay: 1.5
+  MaxAmmo: 30
   AutomaticReleaseOnCharged: 0
   MaxChargeDuration: 2
   AmmoUsedOnStartCharge: 1
@@ -5344,12 +5344,22 @@ MonoBehaviour:
   MuzzleFlashPrefab: {fileID: 748781637555137343, guid: 9f671b22f25370048a18fb1f821294ec,
     type: 3}
   UnparentMuzzleFlash: 0
-  ShootSfx: {fileID: 8300000, guid: 53d2238f4c4b2aa4f8e559c7af9e0126, type: 3}
+  ShootSfx: {fileID: 8300000, guid: 38b450e2adcb6f542acc8c1d423bd8dc, type: 3}
   ChangeWeaponSfx: {fileID: 8300000, guid: 7b83d61917ac1224f942a0609b1221f2, type: 3}
   UseContinuousShootSound: 0
   ContinuousShootStartSfx: {fileID: 0}
   ContinuousShootLoopSfx: {fileID: 0}
   ContinuousShootEndSfx: {fileID: 0}
+  mainAudioSource: {fileID: 130713296492219216}
+  shootAudioSource: {fileID: 130713296492219216}
+  reloadSoundOutOfAmmo: {fileID: 8300000, guid: 5b907074256e36d41b92e89fb0790633,
+    type: 3}
+  reloadSoundAmmoLeft: {fileID: 8300000, guid: f7ce534a0633b9847910ba117e2245d1, type: 3}
+  bulletPrefab: {fileID: 0}
+  bulletSpawnPoint: {fileID: 0}
+  casingSpawnPoint: {fileID: 2729458826696050978}
+  casingPrefab: {fileID: 4420745226056240, guid: 7be59128a5ee3424faf33d7a408c0b2e,
+    type: 3}
 --- !u!114 &8745372878802205896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5384,7 +5394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   granadeCount: 100000
   grenadeSpawnDelay: 0.4
-  fireRate: 11.5
+  fireRate: 15
   bulletForce: 400
   showBulletInMagDelay: 0.6
   bulletInMagRenderer: {fileID: 9046145284966823711}

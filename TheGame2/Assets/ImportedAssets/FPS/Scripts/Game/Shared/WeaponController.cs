@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -24,6 +25,7 @@ namespace Unity.FPS.Game
         [Tooltip("The color of the crosshair image")]
         public Color CrosshairColor;
     }
+  
 
     [RequireComponent(typeof(AudioSource))]
     public class WeaponController : MonoBehaviour
@@ -163,8 +165,34 @@ namespace Unity.FPS.Game
 
         private Queue<Rigidbody> m_PhysicalAmmoPool;
 
+        Animator anim;
+        //sonzin de recarga
+        [Header("Audio Sauces")]
+        public AudioSource mainAudioSource;
+        public AudioSource shootAudioSource;
+        public AudioClip reloadSoundOutOfAmmo;
+        public AudioClip reloadSoundAmmoLeft;
+
+        [Header("Casing Data")]
+        public Transform casingSpawnPoint;
+        public Transform casingPrefab;
+
+        bool isReloading = false;
+        bool isAiming = false;
+        bool isInspecting = false;
+        bool isStabbing = false;
+
+        private IEnumerator reloadDelay(float time)
+        {
+            //Wait for set amount of time before spawning grenade
+            yield return new WaitForSeconds(time);
+            //Spawn grenade prefab at spawnpoint
+            m_CurrentAmmo = MaxAmmo;
+        }
+
         void Awake()
         {
+            anim = GetComponent<Animator>();
             m_CurrentAmmo = MaxAmmo;
             m_CarriedPhysicalBullets = HasPhysicalBullets ? ClipSize : 0;
             m_LastMuzzlePosition = WeaponMuzzle.position;
@@ -214,10 +242,33 @@ namespace Unity.FPS.Game
 
         void PlaySFX(AudioClip sfx) => AudioUtility.CreateSFX(sfx, transform.position, AudioUtility.AudioGroups.WeaponShoot, 0.0f);
 
+        void FixedReload()
+        {
+            if(m_CurrentAmmo != MaxAmmo)
+            {
+                if (m_CurrentAmmo == 0f)
+                {
+                    anim.Play("Reload Out Of Ammo", 0, 0f);
+                    mainAudioSource.clip = reloadSoundOutOfAmmo;
+                    StartCoroutine(reloadDelay(AmmoReloadDelay + 1f));
+                }
+                    
+                else
+                {
+                    anim.Play("Reload Ammo Left", 0, 0f);
+                    mainAudioSource.clip = reloadSoundAmmoLeft;
+                    StartCoroutine(reloadDelay(AmmoReloadDelay));
+
+                }
+                mainAudioSource.Play();
+            }
+  
+            IsReloading = false;
+        }
 
         void Reload()
         {
-            if (m_CarriedPhysicalBullets > 0)
+            if (m_CarriedPhysicalBullets >= 0)
             {
                 m_CurrentAmmo = Mathf.Min(m_CarriedPhysicalBullets, ClipSize);
             }
@@ -234,12 +285,25 @@ namespace Unity.FPS.Game
             }
         }
 
-        void Update()
+        void FixedUpdate()
         {
+            if (gameObject.tag == "Ak" && Input.GetKeyDown(KeyCode.Q) && !isStabbing && !isReloading)
+            {
+                anim.Play("Knife Attack 1", 0, 0f);
+                isStabbing = true;
+            }
+
+            if (gameObject.tag == "Ak"){
+                AnimationCheck();
+                if (Input.GetKeyDown(KeyCode.R) && !isReloading)
+                {
+                    FixedReload();
+                }
+            }
             UpdateAmmo();
             UpdateCharge();
             UpdateContinuousShootSound();
-
+            
             if (Time.deltaTime > 0)
             {
                 MuzzleWorldVelocity = (WeaponMuzzle.position - m_LastMuzzlePosition) / Time.deltaTime;
@@ -390,14 +454,60 @@ namespace Unity.FPS.Game
             }
         }
 
+        void AnimationCheck()
+        {
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("Reload Out Of Ammo") ||
+                anim.GetCurrentAnimatorStateInfo(0).IsName("Reload Ammo Left"))
+            {
+                isReloading = true;
+            }
+            else
+            {
+                isReloading = false;
+            }
+
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("Knife Attack 1") ||
+                anim.GetCurrentAnimatorStateInfo(0).IsName("Knife Attack 2"))
+            {
+                isStabbing = true;
+            }
+            else
+            {
+                isStabbing = false;
+            }
+
+
+
+        }
         bool TryShoot()
         {
-            if (m_CurrentAmmo >= 1f
-                && m_LastTimeShot + DelayBetweenShots < Time.time)
-            {
-                HandleShoot();
-                m_CurrentAmmo -= 1f;
 
+            if (m_CurrentAmmo >= 1f && m_LastTimeShot + DelayBetweenShots < Time.time)
+            {
+                if (gameObject.tag == "Ak")
+                {   
+                    if (!isReloading && !isInspecting && !isStabbing)
+                    {
+                        HandleShoot();
+                        m_CurrentAmmo -= 1f;
+                        var casing =  (Transform)Instantiate(casingPrefab,
+                            casingSpawnPoint.transform.position,
+                            casingSpawnPoint.transform.rotation);
+
+                        casing.transform.localScale *= 5;
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+
+                    }
+                }
+                else
+                {
+                    HandleShoot();
+                    m_CurrentAmmo -= 1f;
+                }
                 return true;
             }
 
