@@ -3,15 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a5e22c49-80c6-4857-ac4d-ca877d0a6756" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TheGame2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TheGame2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Saray.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Saray.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAsset.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAsset.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Main.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Main.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/FPS/Prefabs/Level/Floors/Floor_3x3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FPS/Prefabs/Level/Floors/Floor_3x3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/FPS/Prefabs/Projectiles/Projectile_Disc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FPS/Prefabs/Projectiles/Projectile_Disc.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/FPS/Prefabs/Weapons/Weapon_Launcher.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FPS/Prefabs/Weapons/Weapon_Launcher.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,6 +91,8 @@
       <workItem from="1631932388730" duration="1250000" />
       <workItem from="1632014926276" duration="1264000" />
       <workItem from="1632061423603" duration="7667000" />
+      <workItem from="1633014955743" duration="1672000" />
+      <workItem from="1633026258053" duration="235000" />
     </task>
     <task id="LOCAL-00001" summary="Base project files">
       <created>1630092261954</created>

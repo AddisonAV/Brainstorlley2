@@ -93,6 +93,12 @@ MonoBehaviour:
   ContinuousShootStartSfx: {fileID: 0}
   ContinuousShootLoopSfx: {fileID: 0}
   ContinuousShootEndSfx: {fileID: 0}
+  mainAudioSource: {fileID: 0}
+  shootAudioSource: {fileID: 0}
+  reloadSoundOutOfAmmo: {fileID: 0}
+  reloadSoundAmmoLeft: {fileID: 0}
+  casingSpawnPoint: {fileID: 0}
+  casingPrefab: {fileID: 0}
 --- !u!114 &1284412032582177879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,6 +164,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29a2833c2faa8a3439fd04522cf5733c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  granadeCount: 0
+  grenadeSpawnDelay: 0.4
+  fireRate: 0
+  bulletForce: 400
+  showBulletInMagDelay: 0.6
+  bulletInMagRenderer: {fileID: 0}
+  shootSound: {fileID: 0}
+  takeOutSound: {fileID: 0}
+  holsterSound: {fileID: 0}
+  reloadSoundOutOfAmmo: {fileID: 0}
+  reloadSoundAmmoLeft: {fileID: 0}
+  aimSound: {fileID: 0}
+  randomMuzzleflash: 0
+  maxRandomValue: 5
+  enableMuzzleflash: 1
+  muzzleParticles: {fileID: 0}
+  enableSparks: 1
+  sparkParticles: {fileID: 0}
+  minSparkEmission: 1
+  maxSparkEmission: 7
+  bulletPrefab: {fileID: 0}
+  casingPrefab: {fileID: 0}
+  grenadePrefab: {fileID: 0}
+  casingSpawnPoint: {fileID: 0}
+  bulletSpawnPoint: {fileID: 0}
+  grenadeSpawnPoint: {fileID: 0}
+  muzzleflashLight: {fileID: 0}
+  lightDuration: 0.02
+  autoReload: 0
+  autoReloadDelay: 0
+  ammo: 0
+  mainAudioSource: {fileID: 0}
+  shootAudioSource: {fileID: 0}
   SteamVfx: {fileID: 5137593757008142652}
   SteamVfxEmissionRateMax: 8
   OverheatGradient:
