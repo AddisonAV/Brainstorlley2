@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ImportedAssets/FPS/Scenes/MainScene.unity
     guid: d794a2ef8ba31d847ad3c19d03e2ddb9
+  - enabled: 1
+    path: Assets/Scenes/MainLevel.unity
+    guid: d36d5c9055275d64699dfe08fd48337f
   m_configObjects: {}

@@ -3,11 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="a5e22c49-80c6-4857-ac4d-ca877d0a6756" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TheGame2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TheGame2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/FPS/Prefabs/Level/Floors/Floor_3x3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FPS/Prefabs/Level/Floors/Floor_3x3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/FPS/Prefabs/Projectiles/Projectile_Disc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FPS/Prefabs/Projectiles/Projectile_Disc.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/FPS/Prefabs/Weapons/Weapon_Launcher.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FPS/Prefabs/Weapons/Weapon_Launcher.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/FPS/Scenes/MainScene/NavMesh-NavMeshSurface.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/FPS/Scenes/MainScene/NavMesh-NavMeshSurface.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImportedAssets/FPS/Scenes/WinScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImportedAssets/FPS/Scenes/WinScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Base_floor.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Base_floor.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Base_wall.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Base_wall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Floor24x24.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Floor24x24.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Floor3x3.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Floor3x3.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Floor6x6.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Floor6x6.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Sign_Diamond.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Sign_Diamond.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Sign_Triangle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Sign_Triangle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Wall4x4.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Wall4x4.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Wall_Corner.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Wall_Corner.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Wall_Door.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Room/Wall_Door.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainLevel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,6 +113,7 @@
       <workItem from="1632061423603" duration="7667000" />
       <workItem from="1633014955743" duration="1672000" />
       <workItem from="1633026258053" duration="235000" />
+      <workItem from="1633027444515" duration="1884000" />
     </task>
     <task id="LOCAL-00001" summary="Base project files">
       <created>1630092261954</created>
