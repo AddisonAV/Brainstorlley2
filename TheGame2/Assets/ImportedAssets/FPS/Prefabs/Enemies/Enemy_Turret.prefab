@@ -447,9 +447,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DetectionSourcePoint: {fileID: 6571005840976436832}
-  DetectionRange: 30
-  AttackRange: 35
-  KnownTargetTimeout: 4
+  DetectionRange: 80
+  AttackRange: 60
+  KnownTargetTimeout: 2
   Animator: {fileID: 0}
 --- !u!1 &7448957880145452174
 GameObject:
@@ -717,6 +717,12 @@ MonoBehaviour:
   ContinuousShootStartSfx: {fileID: 0}
   ContinuousShootLoopSfx: {fileID: 0}
   ContinuousShootEndSfx: {fileID: 0}
+  mainAudioSource: {fileID: 0}
+  shootAudioSource: {fileID: 0}
+  reloadSoundOutOfAmmo: {fileID: 0}
+  reloadSoundAmmoLeft: {fileID: 0}
+  casingSpawnPoint: {fileID: 0}
+  casingPrefab: {fileID: 0}
 --- !u!82 &2231955200838058728
 AudioSource:
   m_ObjectHideFlags: 0

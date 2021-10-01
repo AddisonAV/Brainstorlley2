@@ -467,9 +467,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DetectionSourcePoint: {fileID: 6571005840976436832}
-  DetectionRange: 20
-  AttackRange: 10
-  KnownTargetTimeout: 12
+  DetectionRange: 50
+  AttackRange: 40
+  KnownTargetTimeout: 4
   Animator: {fileID: 0}
 --- !u!1 &6421371450313891992
 GameObject:
@@ -776,7 +776,7 @@ MonoBehaviour:
   ShootType: 1
   ProjectilePrefab: {fileID: 8924682559891268397, guid: ec753d54f333bb944b8b04884ad63828,
     type: 3}
-  DelayBetweenShots: 0.8
+  DelayBetweenShots: 0.5
   BulletSpreadAngle: 0
   BulletsPerShot: 1
   RecoilForce: 1
@@ -805,6 +805,12 @@ MonoBehaviour:
   ContinuousShootStartSfx: {fileID: 0}
   ContinuousShootLoopSfx: {fileID: 0}
   ContinuousShootEndSfx: {fileID: 0}
+  mainAudioSource: {fileID: 0}
+  shootAudioSource: {fileID: 0}
+  reloadSoundOutOfAmmo: {fileID: 0}
+  reloadSoundAmmoLeft: {fileID: 0}
+  casingSpawnPoint: {fileID: 0}
+  casingPrefab: {fileID: 0}
 --- !u!82 &2231955200838058728
 AudioSource:
   m_ObjectHideFlags: 0
